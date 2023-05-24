@@ -2,7 +2,6 @@ import s from './Friends.module.css';
 import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
-
   return (
     <div className={s.friends}>
       <ul className={s.friends__list}>
@@ -21,8 +20,5 @@ export const FriendList = ({ friends }) => {
 };
 
 FriendList.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  isOnline: PropTypes.bool,
-  id: PropTypes.number,
+  friends: PropTypes.array.isRequired
 };
